@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 
+const checkMaxLength = (collection, maxLength) =>
+  collection.length !== undefined && collection.length <= maxLength;
+
 function getRandomPositiveInteger(a, b) {
   if (a < 0 || b < 0) {
     return NaN;
