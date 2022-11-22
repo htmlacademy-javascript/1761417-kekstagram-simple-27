@@ -1,6 +1,6 @@
-import { getRandomDescription, getRandomPositiveInteger } from 'random.js';
+import { getRandomDescription, getRandomPositiveInteger } from './random.js';
 
-export function createObj(id) {
+export function createPicture(id) {
   return {
     id: id,
     url: `photos/${id}.jpg`,
@@ -10,12 +10,10 @@ export function createObj(id) {
   };
 }
 
-export function get25Objects() {
+export function get25Pictures() {
   const result = [];
   for (let i = 1; i < 26; i++) {
-    result.push(createObj(i));
+    result.push(createPicture(i));
   }
   return result;
 }
-
-get25Objects();
